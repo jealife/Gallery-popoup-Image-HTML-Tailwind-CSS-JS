@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Gallery image Popup - HTML-Tailwind CSS - JS</title>
+    <script type="module">
+        document.documentElement.classList.remove('no-js');
+        document.documentElement.classList.add('js');
+    </script>
+    <meta name="description" content="Gallery  HTMl Tailwind CSS and JS"> <!-- TODO: update meta description -->
+    <meta property="og:title" content="Home - Gallery"> <!-- TODO: update og:title -->
+    <meta property="og:url" content="https://www.example.com/page"> <!-- TODO: update og:url -->
+    <meta property="og:description" content="Gallery  HTMl Tailwind CSS and JS"> <!-- TODO: update og:description -->
+    <meta property="og:image" content="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-5.jpg">
+    <!-- TODO: og:image -->
+    <meta property="og:image:alt" content="a shoes"> <!-- TODO: update og:image:alt -->
+    <meta property="og:locale" content="fr_FR">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-5.jpg">
+    <!-- TODO: update twitter:cared -->
+    <link rel="canonical" href="https://www.example.com/page"> <!-- TODO: update canonical link -->
+    <link rel="icon" href="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-5.jpg">
+    <link rel="icon" href="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-5.jpg" type="image/jpg">
+    <link rel="apple-touch-icon" href="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-5.jpg">
+    <link rel="manifest" href="site.webmanifest"> <!-- TODO: update web app manifest file -->
+    <meta name="theme-color" content="#F1F1F1">
+</head>
+
+<body class="relative">
+    <main class="flex flex-col px-12 py-24 min-h-svh ">
+
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+            <div class="grid gap-4">
+                <div class="image-container">
+                    <img class="cursor-pointer hover:shadow-xl shadow-black/30 duration-300 image h-auto max-w-full rounded-lg"
+                        src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image.jpg" alt="">
+                </div>
+                <div class="image-container">
+                    <img class="cursor-pointer hover:shadow-xl shadow-black/30 duration-300 image h-auto max-w-full rounded-lg"
+                        src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-1.jpg" alt="">
+                </div>
+                <div class="image-container">
+                    <img class="cursor-pointer hover:shadow-xl shadow-black/30 duration-300 image h-auto max-w-full rounded-lg"
+                        src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-2.jpg" alt="">
+                </div>
+            </div>
+            <div class="grid gap-4">
+                <div class="image-container">
+                    <img class="cursor-pointer hover:shadow-xl shadow-black/30 duration-300 image h-auto max-w-full rounded-lg"
+                        src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-3.jpg" alt="">
+                </div>
+                <div class="image-container">
+                    <img class="cursor-pointer hover:shadow-xl shadow-black/30 duration-300 image h-auto max-w-full rounded-lg"
+                        src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-4.jpg" alt="">
+                </div>
+                <div class="image-container">
+                    <img class="cursor-pointer hover:shadow-xl shadow-black/30 duration-300 image h-auto max-w-full rounded-lg"
+                        src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-5.jpg" alt="">
+                </div>
+            </div>
+            <div class="grid gap-4">
+                <div class="image-container">
+                    <img class="cursor-pointer hover:shadow-xl shadow-black/30 duration-300 image h-auto max-w-full rounded-lg"
+                        src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-6.jpg" alt="">
+                </div>
+                <div class="image-container">
+                    <img class="cursor-pointer hover:shadow-xl shadow-black/30 duration-300 image h-auto max-w-full rounded-lg"
+                        src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-7.jpg" alt="">
+                </div>
+                <div class="image-container">
+                    <img class="cursor-pointer hover:shadow-xl shadow-black/30 duration-300 image h-auto max-w-full rounded-lg"
+                        src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-8.jpg" alt="">
+                </div>
+            </div>
+            <div class="grid gap-4">
+                <div class="image-container">
+                    <img class="cursor-pointer hover:shadow-xl shadow-black/30 duration-300 image h-auto max-w-full rounded-lg"
+                        src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-9.jpg" alt="">
+                </div>
+                <div class="image-container">
+                    <img class="cursor-pointer hover:shadow-xl shadow-black/30 duration-300 image h-auto max-w-full rounded-lg"
+                        src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-10.jpg" alt="">
+                </div>
+                <div class="image-container">
+                    <img class="cursor-pointer hover:shadow-xl shadow-black/30 duration-300 image h-auto max-w-full rounded-lg"
+                        src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-11.jpg" alt="">
+                </div>
+            </div>
+        </div>
+
+
+    </main>
+    <div
+        class="poppup-image-container hidden fixed bg-black/85 backdrop-blur-lg w-full min-h-screen z-50 top-0 pt-1 pb-24 px-4 items-center justify-center flex-col ">
+        <span
+            class="text-white text-3xl font-medium p-2 cursor-pointer flex w-full justify-end lg:max-w-screen-lg">&times;</span>
+        <img class="outline outline-white outline-offset-4 image object-cover w-full lg:w-[750px] rounded-lg lg:h-[750px]"
+            src="" alt="">
+    </div>
+    <script>
+        document.querySelectorAll('.image-container img').forEach(image => {
+            image.onclick = () => {
+                document.querySelector('.poppup-image-container').style.display = 'flex';
+                document.querySelector('.poppup-image-container img').src = image.getAttribute('src');
+            }
+        })
+        document.querySelector('.poppup-image-container').onclick = () => {
+            document.querySelector('.poppup-image-container').style.display = 'none';
+        };
+    </script>
+
+</body>
+
+</html>
